@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+import Container from './components/Container';
 import Scrolldown from './components/Scrolldown';
 
 function App() {
@@ -13,6 +15,9 @@ function App() {
       <div className='mainContent'>
         <Header />
         <div className='spacer'></div>
+        <Portfolio />
+        <div className='spacer2'></div>
+        <Container />
         <Scrolldown />
       </div>
 

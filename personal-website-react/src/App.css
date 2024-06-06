@@ -12,21 +12,23 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: white;
+  background-color: #11111b; /*crust*/
 }
 
 .mainContent {
   position: relative;
   z-index: 2;
 
-  background-color: white;
-  max-width: calc(100vh * 16 / 9);
+  background-color: #1e1e2e; /*base*/
+  /*max-width: calc(100vh * 16 / 9);
   min-height: 100vh;
-  margin: auto;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  margin: auto;*/
 }
 
 .spacer {
-  margin: 15vh;
+  margin: 30vh;
+}
+
+.spacer2 {
+  margin: 10vh;
 }

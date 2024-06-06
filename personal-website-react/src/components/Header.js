@@ -17,7 +17,7 @@ function Header(){
             </div>
             <div className={styles.rhs}>
                 <div className={styles.contact}>
-                    <button>Contact</button>
+                    {/*<button>Contact</button> -- I'm commenting this because idk if I want it*/}
                 </div>
             </div>
         </div>

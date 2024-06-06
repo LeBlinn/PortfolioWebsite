@@ -1,0 +1,23 @@
+.mainDiv {
+    margin: auto;
+    background-color: #313244;
+    border-radius: 2vh;
+    width: 80vw; /* width of the box */
+    height: 60vh; /* height of the box */
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));;
+}
+
+.lhs {
+    margin: auto;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rhs {
+    grid-column: 2;
+    margin: auto;
+}
+
