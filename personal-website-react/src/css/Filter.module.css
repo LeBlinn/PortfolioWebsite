@@ -1,0 +1,3 @@
+.filter {
+    pointer-events: none; /* Allow clicks to pass through */
+}

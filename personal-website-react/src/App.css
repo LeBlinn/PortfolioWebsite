@@ -1,8 +1,22 @@
+/* Hide scrollbars for all elements */
+* {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
 .App {
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+
+  overflow: hidden;
+  scrollbar-width: 0px;
+  -ms-overflow-style: none;
 }
 
 .background {
@@ -26,9 +40,9 @@
 }
 
 .spacer {
-  margin: 30vh;
+  margin: 16vh;
 }
 
 .spacer2 {
-  margin: 10vh;
+  margin: 50vh;
 }

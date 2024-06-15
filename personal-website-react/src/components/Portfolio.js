@@ -5,30 +5,32 @@ import React, { useRef, useEffect } from 'react';
 function Portfolio(){
     
     // Reference to the portfolio element
-    const portfolioRef = useRef(null);
+    const portfolioRef = useRef();
 
     // Scroll event handler
     const handleScroll = () => {
         const scrollY = window.scrollY;
         if (portfolioRef.current) {
-            // This will adjust the horizontal scroll as you scroll down
-            portfolioRef.current.scrollLeft = scrollY;
+            portfolioRef.current.scrollLeft = scrollY*2;
         }
     };
 
-    // Attach the scroll event listener to window
+    // Event listener
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener on unmount
+    // Unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
     }, []);
     
     return (
-        <div className={styles.mainDiv} ref={portfolioRef}>
-           <h1 className={styles.Portfolio}>Portfolio</h1> 
+        <div className={styles.mainDiv}>
+            <div className={styles.scrollContainer} ref={portfolioRef}>
+                <div className={styles.Margin}></div>
+                <h1 className={styles.Portfolio}>About Me</h1> 
+            </div>
         </div>
     )
 }

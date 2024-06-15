@@ -1,18 +1,30 @@
 .mainDiv {
     white-space: nowrap;
     margin: 0;
-    margin-left: 12vh;
+    min-width: 100vh;
+}
 
-    text-align: left;
-    line-height: 1;
-    font-size: 20vw;
-    font-weight: 900;
-    color: #fab387;
+.scrollContainer {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100vw; /* Full viewport width */
+  }
+
+.Margin {
+    margin-left: 6vw;
 }
 
 .Portfolio {
     margin: 0;
-
-    overflow-x: auto;
+    display: inline-block;
     white-space: nowrap;
+    min-width: 400vh;
+
+    line-height: 1;
+    font-size: 20vw;
+    font-weight: 900;
+    color: #fab387;
 }
