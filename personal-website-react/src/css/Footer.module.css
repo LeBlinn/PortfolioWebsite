@@ -1,0 +1,13 @@
+.mainDiv {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+
+    font-size: 12pt;
+    font-weight: 300;
+    color: #f2cdcd;
+}
+
+.spacer {
+    height: 58vh;
+}

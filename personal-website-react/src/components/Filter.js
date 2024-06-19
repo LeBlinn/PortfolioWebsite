@@ -1,5 +1,3 @@
-import styles from '../css/Filter.module.css';
-
 import React, { useRef, useEffect } from 'react';
 
 
@@ -33,7 +31,7 @@ function Filter({ children }){
     }, []);
 
     return (
-        <div className={styles.filter} ref={filterRef}>{ children }</div>
+        <div ref={filterRef}>{ children }</div>
     )
 }
 

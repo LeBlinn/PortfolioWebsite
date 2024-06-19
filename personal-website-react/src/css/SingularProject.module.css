@@ -20,19 +20,18 @@
     }
 
     .name {
-        font-size: 20pt;
-        font-weight: 900;
+        font-size: 18pt;
+        font-weight: 800;
         color: #fab387;
+        text-align: left;
         
         max-width: 75vw;
-        z-index: 2;
 
         position: relative;
     }
 
     .img {
         width: 75vw;
-        z-index: 1;
         margin: auto;
     }
 
@@ -74,21 +73,16 @@
     }
 
     .name {
-        font-size: 26pt;
-        font-weight: 900;
+        font-size: 24pt;
+        font-weight: 800;
         color: #fab387;
+        text-align: left;
         
         max-width: 24vw;
-        z-index: 2;
-
-        position: absolute;
     }
 
     .img {
         width: 24vw;
-        z-index: 1;
-        margin-top: 3vh;
-        margin-left: 2vw;
     }
 
     .rhs {

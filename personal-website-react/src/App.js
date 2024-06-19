@@ -6,8 +6,10 @@ import Filter from './components/Filter';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Projects from './components/Project/Projects';
-import Skills from './components/Skills';
-import Scrolldown from './components/Scrolldown';
+import Expertise from './components/Expertise';
+import Footer from './components/Footer';
+
+import Width from './components/Width';
 
 function App() {
   return (
@@ -22,8 +24,11 @@ function App() {
           <div className='spacer2'></div>
           <Projects />
           <div className='spacer'></div>
-          <Skills />
-          <Scrolldown />
+          <Width>
+            <Expertise />
+          </Width>
+          <div className='spacer'></div>
+          <Footer />
         </div>
 
       </Filter>

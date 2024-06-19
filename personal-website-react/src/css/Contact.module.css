@@ -1,0 +1,139 @@
+@media (max-width:950px) { /*Mobile*/
+    .mainDiv {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .lhs {
+        margin-top: 2vh;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: 6vw;
+
+        grid-column: 1;
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+    }
+
+    .header {
+        margin-bottom: 2vh;
+
+        font-family: "Noto Sans Mono", sans-serif;
+        font-size: 38pt;
+        font-weight: 900;
+        color: #fab387;
+    }
+
+    .subWord {
+        font-size: 10pt;
+        font-weight: 300;
+        color: #f2cdcd;
+    }
+
+    .spacer {
+        margin-top: 5vh;
+    }
+
+    .contacts {
+        font-size: 14pt;
+        font-weight: 350;
+        text-decoration: underline;
+
+        a {
+            color:inherit;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            margin: 0;
+            margin-bottom: 2vh;
+            padding: 0;
+        }
+        
+    }
+
+    .rhs {
+
+    }
+}
+
+@media (min-width:951px) { /*Desktop*/
+    .mainDiv {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .lhs {
+        margin-top: 2vh;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: 6vw;
+
+        grid-column: 1;
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+    }
+
+    .header {
+        margin-bottom: 2vh;
+
+        font-family: "Noto Sans Mono", sans-serif;
+        font-size: 38pt;
+        font-weight: 900;
+        color: #fab387;
+    }
+
+    .subWord {
+        font-size: 12pt;
+        font-weight: 300;
+        color: #f2cdcd;
+    }
+
+    .spacer {
+        margin-top: 5vh;
+    }
+
+    .contacts {
+        font-size: 18pt;
+        font-weight: 350;
+        text-decoration: underline;
+
+        a {
+            color:inherit;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            margin: 0;
+            margin-bottom: 2vh;
+            padding: 0;
+        }
+        
+    }
+
+    .rhs {
+
+    }
+}

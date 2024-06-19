@@ -6,7 +6,7 @@
 
     .title {
         font-family: "Noto Sans Mono", sans-serif;
-        font-size: 50pt;
+        font-size: 38pt;
         font-weight: 900;
         color: #fab387;
 
@@ -37,7 +37,7 @@
     }
 }
 
-@media (min-width:951px) {
+@media (min-width:951px) { /*Desktop*/
     .mainDiv {
         width: 100%;
         max-width: 100%;
