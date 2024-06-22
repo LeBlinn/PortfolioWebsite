@@ -1,0 +1,93 @@
+@media (max-width:950px) { /*Mobile*/
+    .HeaderMainDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 4vh;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .name {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        flex: 1;
+        margin-bottom: 2vh;
+
+        font-size: 3em;
+        font-weight: 900;
+        color: #fab387;
+    }
+
+    .subname {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        font-size: 1em;
+        font-weight: 300;
+        color: #f2cdcd;
+    }
+
+    .spacer {
+        flex: 1;
+        margin-top: 5vh;
+    }
+
+    .description {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        flex: 1;
+        text-align: left;
+
+        font-size: 1.2em;
+        font-weight: 350;
+        color: white;
+    }
+}
+
+@media (min-width:951px) { /*Desktop*/
+    .HeaderMainDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 10vh;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .name {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        flex: 1;
+
+        font-size: 4em;
+        font-weight: 900;
+        color: #fab387;
+    }
+
+    .subname {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        font-size: 1em;
+        font-weight: 300;
+        color: #f2cdcd;
+    }
+
+    .spacer {
+        flex: 1;
+        margin-top: 5vh;
+    }
+
+    .description {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        flex: 1;
+        text-align: left;
+        font-size: 1.1em;
+        font-weight: 350;
+        color: white;
+    }
+}
