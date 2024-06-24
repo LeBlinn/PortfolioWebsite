@@ -1,5 +1,5 @@
 @media (max-width:950px) { /*Mobile*/
-    .singularProjectMainDiv {
+    .portfolioWebsiteMainDiv {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
@@ -22,7 +22,6 @@
     .name {
         font-size: 1.1em;
         font-weight: 800;
-        color: #fab387;
         text-align: left;
         
         max-width: 75vw;
@@ -50,7 +49,7 @@
 
 @media (min-width:951px) { /*Desktop*/
     
-    .singularProjectMainDiv {
+    .portfolioWebsiteMainDiv {
         display: grid;
         grid-template-columns: 1fr, 2fr;
         width: 100%;
@@ -62,29 +61,15 @@
         margin-right: 10vw;
     }
 
-    .singularProjectMainDiv:hover {
-        display: grid;
-        grid-template-columns: 1fr, 2fr;
-        width: 100%;
-        max-width: 100%;
-
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
+    .portfolioWebsiteMainDiv:hover {
 
         .name {
-            transition: font-size 0.5s;
+            transition: font-size 0.25s;
             font-size: 2em;
-            font-weight: 800;
-            color: #fab387;
-            text-align: left;
-            
-            max-width: 30vw;
         }
     
         .img {
-            transition: width 0.5s;
+            transition: width 0.25s;
             width: 30vw;
         }
     }
@@ -98,11 +83,14 @@
         max-width: fit-content;
     }
 
+    .lhs:hover {
+        cursor: pointer;
+    }
+
     .name {
         transition: font-size 0.5s;
         font-size: 1.5em;
         font-weight: 800;
-        color: #fab387;
         text-align: left;
         
         max-width: 24vw;

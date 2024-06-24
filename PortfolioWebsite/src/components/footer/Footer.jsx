@@ -5,7 +5,7 @@ function footer(){
     return (
         <div className={styles.footerMainDiv}>
             <Contact />
-            <div className={styles.footnote}>
+            <div className={`${styles.footnote} text`}>
                 developed by Josh Blinn © 2024. All Rights Reserved.
             </div>
         </div>

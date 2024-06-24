@@ -32,6 +32,18 @@ body {
   margin: auto;*/
 }
 
+.mainText {
+  color:#cba6f7;
+}
+
+.text {
+  color:white;
+}
+
+.subText {
+  color: white;
+}
+
 .spacer {
   margin: 50vh;
 }

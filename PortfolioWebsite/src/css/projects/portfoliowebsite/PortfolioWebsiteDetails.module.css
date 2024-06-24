@@ -1,0 +1,72 @@
+.portfolioWebsiteDetailsMainDiv {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    
+    min-width: 100vw;
+    min-height: 100vh;
+
+    z-index: 2;
+}
+
+.close {
+    top: 0;
+    right: 0;
+    margin: 1vw;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.content {
+    margin: auto;
+    max-width: 80vw; /* 88vw in order to match header spacing, but screw that */
+}
+
+.topSection {
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lhs {
+    grid-column: 1;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.type {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.name {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.spacer {
+    margin-top: 10vh;
+}
+
+.description {
+    font-size: 1.2em;
+    font-weight: 350;
+}
+
+.rhs {
+    grid-column: 2;
+    margin: auto;
+}
+
+.bottomSection {
+
+}
+
+.img {
+    margin-top: 30vh;
+    max-width: 80vw; /*80vw to match content width*/
+}

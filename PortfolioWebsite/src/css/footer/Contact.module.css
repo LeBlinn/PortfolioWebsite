@@ -17,14 +17,13 @@
         padding-right: 5%; /*prevents annoying text overflow*/
         font-size: 2em;
         font-weight: 900;
-        color: #fab387;
     }
 
     .subWord {
         padding-right: 5%; /*prevents annoying text overflow*/
+        margin-right: 5vw; /*preference*/
         font-size: 1em;
         font-weight: 300;
-        color: #f2cdcd;
     }
 
     .spacer {
@@ -71,13 +70,11 @@
     .header {
         font-size: 3em;
         font-weight: 900;
-        color: #fab387;
     }
 
     .subWord {
         font-size: 1.2em;
         font-weight: 300;
-        color: #f2cdcd;
     }
 
     .spacer {

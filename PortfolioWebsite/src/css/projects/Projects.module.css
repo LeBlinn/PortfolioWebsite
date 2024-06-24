@@ -8,7 +8,6 @@
         font-family: "Noto Sans Mono", sans-serif;
         font-size: 3em;
         font-weight: 900;
-        color: #fab387;
 
         margin-top: auto;
         margin-bottom: auto;
@@ -35,6 +34,8 @@
 
 @media (min-width:951px) { /*Desktop*/
     .mainDiv {
+        opacity: 0%; /*This is swapped to 100% by animation*/
+
         width: 100%;
         max-width: 100%;
 
@@ -49,7 +50,6 @@
         font-family: "Noto Sans Mono", sans-serif;
         font-size: 4em;
         font-weight: 900;
-        color: #fab387;
     }
 
     .titleLine {

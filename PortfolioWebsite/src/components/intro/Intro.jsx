@@ -6,7 +6,7 @@ function Intro(){
     return (
         <div className={styles.IntroMainDiv}>
             <Header />
-            <Portfolio />
+            <Portfolio /> {/*might scrap portfolio*/}
         </div>
     )
 }

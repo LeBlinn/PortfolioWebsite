@@ -15,7 +15,6 @@
         
         font-size: 1em;
         font-weight: 500;
-        color: #fab387;
     }
 
     .downArrow {
@@ -30,7 +29,7 @@
     .viewMoreMainDiv {
         margin: auto;
         max-width: fit-content;
-        
+
         display: flex; /* Use flexbox to center arrow */
         flex-direction: column; /* Align children vertically */
         text-align: center; /* Center text content */
@@ -43,13 +42,24 @@
         
         font-size: 1em;
         font-weight: 500;
-        color: #fab387;
     }
 
     .downArrow {
         margin-left: auto;
         margin-right: auto;
-        width: 4vh;
+        width: 2vw;
         filter: invert(100%);
+    }
+
+    .viewMoreMainDiv:hover {
+        .viewMoreText {
+            transition: font-size 0.25s;
+            font-size: 1.5em;
+        }
+    
+        .downArrow {
+            transition: width 0.25s;
+            width: 3vw;
+        }
     }
 }
