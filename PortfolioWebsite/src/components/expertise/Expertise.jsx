@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 
 import styles from '../../css/expertise/Expertise.module.css';
-import vite from '../../assets/vite.svg';
-
 import '../../css/Animations.css';
+
+import processor from '../../assets/processor.svg';
+import microcontroller from '../../assets/microcontroller.svg';
+import monitor from '../../assets/monitor.svg';
 
 function Expertise() {
     const box1ref = useRef(null);
@@ -57,21 +59,21 @@ function Expertise() {
             <div className={styles.boxes}>
                 <div className={styles.box1} ref={box1ref}>
                     <div className={styles.boxesTop}>
-                        <img src={vite}></img>
+                        <img src={processor}></img>
                         <h2 className='mainText'>FPGA Development</h2>
                     </div>
                     <p className='text'>Experienced in FPGA Design. Xilinx, Vivado, Multisim, VHDL, System Verilog</p>
                 </div>
                 <div className={styles.box2} ref={box2ref}>
                     <div className={styles.boxesTop}>
-                        <img src={vite}></img>
+                        <img src={microcontroller}></img>
                         <h2 className='mainText'>Embedded Systems</h2>
                     </div>
                     <p className='text'>Skilled in embedded development. Using microcontrollers, such as<br/>STM32, Arduino</p>
                 </div>
                 <div className={styles.box3} ref={box3ref}>
                     <div className={styles.boxesTop}>
-                        <img src={vite}></img>
+                        <img src={monitor}></img>
                         <h2 className='mainText'>Software Developper</h2>
                     </div>
                     <p className='text'>Knowledgeable about high level languages such as Java, C#, python,

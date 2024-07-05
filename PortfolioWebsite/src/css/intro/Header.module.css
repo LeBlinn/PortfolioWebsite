@@ -13,6 +13,10 @@
         text-align: left;
     }
 
+    .opacity {
+        opacity: 0%; /*animation brings it to 100%*/
+    }
+
     .name {
         padding-right: 5%; /*prevents annoying text overflow*/
         flex: 1;
@@ -41,6 +45,7 @@
 
         font-size: 1em;
         font-weight: 350;
+        opacity: 0%; /*animation brings it to 100%*/
     }
 }
 
@@ -84,5 +89,6 @@
         text-align: left;
         font-size: 1.1em;
         font-weight: 350;
+        opacity: 0%; /*animation brings it to 100%*/
     }
 }

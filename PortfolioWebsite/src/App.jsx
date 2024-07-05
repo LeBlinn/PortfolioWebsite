@@ -71,7 +71,7 @@ function App() {
     };
 
   return (
-    <div> {renderComponent()}</div>
+    <div>{renderComponent()}</div>
   )
 }
 

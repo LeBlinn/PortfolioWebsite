@@ -1,8 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState, } from 'react';
 import styles from '../../css/projects/Projects.module.css';
+import '../../css/Animations.css';
+import ViewMore from './ViewMore.jsx';
 
 import PortfolioWebsite from './portfoliowebsite/PortfolioWebsite.jsx';
-import ViewMore from './ViewMore.jsx';
+import Empty from './empty/Empty.jsx';
+
 
 
 function Projects(){
@@ -29,11 +32,51 @@ function Projects(){
             }
         };
     }, []);
+
+    const [ state, setState ] = useState('3');
+
+    const getSize = useRef(null);
+
+    const ViewMoreClickRender = () => {
+        //adds all projects on button click
+        switch (state) {
+            case '0': {
+                setTimeout(() => {setState('1')}, 250);
+                return (
+                    <div className='marginIncrease'/>
+                );
+            }
+            case '1': {
+                return (
+                    <div className='opacityZero Appeared'>
+                        <div className={styles.line} />
+                        <Empty />
+                    </div>
+                );
+            }
+            case '2': { //current animation not working
+                setTimeout(() => {setState('3')}, 250);
+                return (
+                    <div className='Disappeared'>
+                        <div className={styles.line} />
+                        <Empty />
+                    </div>
+                );
+            }
+            case '3': {
+                return (
+                    <div className='marginDecrease' />
+                );
+            }
+            default: 
+                return (null)
+        }
+    }
     
     return (
         <div>
             <div className={styles.mainDiv} ref={Projectsref}>
-                <div>
+                <div ref={getSize}>
                     <div className={`${styles.title} mainText`}>Latest Projects</div>
                     <div className={styles.titleLine}></div>
                 </div>
@@ -41,12 +84,20 @@ function Projects(){
                 <div className={styles.projectsContainer}>
                     {/*I need to add functionality for more projects, but this will do for now*/}
                     <PortfolioWebsite />
-                    <PortfolioWebsite />
-                    <PortfolioWebsite />
-                    <PortfolioWebsite />
+                    <div className={styles.line} />
+                    <Empty />
+                    {ViewMoreClickRender()} 
                 </div>
             </div>
-            <ViewMore /> {/*I added an extra div due to lazyness, definitely not best practice*/}
+            <div onClick={() => {
+                console.log('ViewMore Clicked');
+                if(state == '1') {
+                    setState('2');
+                } else if (state == '3') {
+                    setState('0');
+                }
+                }}><ViewMore />
+            </div> {/*I added an extra div due to lazyness, definitely not best practice*/}
         </div>
     )
 }

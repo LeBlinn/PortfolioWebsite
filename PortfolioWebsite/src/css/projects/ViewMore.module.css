@@ -34,6 +34,7 @@
         flex-direction: column; /* Align children vertically */
         text-align: center; /* Center text content */
         align-items: center; /* Center children horizontally */
+        cursor: pointer;
     }
 
     .viewMoreText {
@@ -49,17 +50,5 @@
         margin-right: auto;
         width: 2vw;
         filter: invert(100%);
-    }
-
-    .viewMoreMainDiv:hover {
-        .viewMoreText {
-            transition: font-size 0.25s;
-            font-size: 1.5em;
-        }
-    
-        .downArrow {
-            transition: width 0.25s;
-            width: 3vw;
-        }
     }
 }

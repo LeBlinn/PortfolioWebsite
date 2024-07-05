@@ -1,5 +1,5 @@
 @media (max-width:950px) { /*Mobile*/
-    .portfolioWebsiteMainDiv {
+    .emptyMainDiv {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
@@ -49,7 +49,7 @@
 
 @media (min-width:951px) { /*Desktop*/
     
-    .portfolioWebsiteMainDiv {
+    .emptyMainDiv {
         display: grid;
         grid-template-columns: 1fr, 2fr;
         width: 100%;
@@ -61,7 +61,7 @@
         margin-right: 10vw;
     }
 
-    .portfolioWebsiteMainDiv:hover {
+    .emptyMainDiv:hover {
 
         .name {
             transition: font-size 0.25s;

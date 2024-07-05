@@ -5,7 +5,7 @@ import Portfolio from './Portfolio.jsx';
 function Intro(){
     return (
         <div className={styles.IntroMainDiv}>
-            <Header />
+            <Header className='SlideInFade'/>
             <Portfolio /> {/*might scrap portfolio*/}
         </div>
     )
