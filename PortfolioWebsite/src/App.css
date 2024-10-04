@@ -1,0 +1,53 @@
+/* Hide scrollbars for all elements */
+* {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+body {
+  margin: 0;
+}
+
+.mainContent {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16pt;
+  color: white;
+
+  overflow: hidden;
+  scrollbar-width: 0px;
+  -ms-overflow-style: none;
+
+  z-index: 2;
+
+  background-color: #1e1e2e; /*base*/
+  /*max-width: calc(100vh * 16 / 9);
+  min-height: 100vh;
+  margin: auto;*/
+}
+
+.mainText {
+  color:#cba6f7;
+}
+
+.text {
+  color:white;
+}
+
+.subText {
+  color: white;
+}
+
+.spacer {
+  margin: 50vh;
+}
+
+.spacer2 {
+  margin: 20vh;
+}

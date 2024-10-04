@@ -1,0 +1,73 @@
+@media (max-width:950px) { /*Mobile*/
+    .mainDiv {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .title {
+        font-family: "Noto Sans Mono", sans-serif;
+        font-size: 3em;
+        font-weight: 900;
+
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: auto;
+    }
+
+    .titleLine {
+        background-color: white;
+        border-style: solid;
+        border-width: 0.1em;
+        border-color: white;
+
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: auto;
+    }
+
+    .spacer {
+        margin: 5vh;
+    }
+
+    .line {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid white;
+    }
+}
+
+@media (min-width:951px) { /*Desktop*/
+    .mainDiv {
+        opacity: 0%; /*This is swapped to 100% by animation*/
+
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: auto;
+        
+    }
+
+    .title {
+        font-family: "Noto Sans Mono", sans-serif;
+        font-size: 4em;
+        font-weight: 900;
+    }
+
+    .titleLine {
+        background-color: white;
+        border-style: solid;
+        border-width: 0.1em;
+        border-color: white;
+    }
+
+    .spacer {
+        margin: 5vh;
+    }
+
+}

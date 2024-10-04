@@ -1,0 +1,128 @@
+@media (max-width:950px) { /*Mobile*/
+    .emptyMainDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+
+        text-align: center; /* Center text content */
+
+        align-items: center; /* Center children horizontally */
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .lhs {
+        grid-column: 1;
+        margin: auto;
+        max-width: fit-content;
+    }
+
+    .name {
+        font-size: 1.1em;
+        font-weight: 800;
+        text-align: left;
+        
+        max-width: 75vw;
+
+        position: relative;
+    }
+
+    .img {
+        width: 75vw;
+        margin: auto;
+    }
+
+    .rhs {
+        grid-column: 1;
+        margin: auto;
+        margin-top: 2vh;
+        max-width: 70vw;
+    }
+
+    .paragraph {
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+}
+
+@media (min-width:951px) { /*Desktop*/
+    
+    .emptyMainDiv {
+        display: grid;
+        grid-template-columns: 1fr, 2fr;
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .emptyMainDiv:hover {
+
+        .name {
+            transition: font-size 0.25s;
+            font-size: 2em;
+
+        }
+    
+        .img {
+            transition: width 0.25s;
+            width: 30vw;
+        }
+
+        .rhs {
+            transition: margin-right 0.25s;
+            transition: margin-top 0.25s;
+            margin-top: 6vh;
+            margin-right: 34vw;
+        }
+    }
+
+    .lhs {
+        grid-column: 1;
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        max-width: fit-content;
+    }
+
+    .lhs:hover {
+        cursor: pointer;
+    }
+
+    .name {
+        transition: font-size 0.25s;
+        font-size: 1.5em;
+        font-weight: 800;
+        text-align: left;
+        
+        max-width: 24vw;
+    }
+
+    .img {
+        transition: width 0.25s;
+        width: 24vw;
+    }
+
+    .rhs {
+        transition: margin-right 0.25s;
+        transition: margin-top 0.25s;
+
+        grid-column: 2;
+        margin-top: 4vh;
+        margin-bottom: 0vh;
+        margin-left: 5vw;
+        margin-right: 40vw;
+        max-width: fit-content;
+    }
+
+    .paragraph {
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,142 @@
+@keyframes SlideInFade {
+    0% {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes SlideInFadeHor {
+    0% {
+        transform: translateX(100%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+    
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+    
+}
+
+@keyframes marginIncrease {
+    0% {
+        margin-top: 0vh;
+    }
+    100% {
+        margin-top: 37.5vh;
+    }
+}
+
+@keyframes marginDecrease {
+    0% {
+        margin-top: 37.5vh;
+    }
+    100% {
+        margin-top: 0vh;
+    }
+}
+
+@keyframes rotate180 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.SlideInFade {
+    animation: SlideInFade 0.5s ease-in-out forwards;
+    animation-delay: 0s; 
+}
+
+.SlideInFadeDelay1 {
+    animation: SlideInFade 0.5s ease-in-out forwards;
+    animation-delay: 0.025s;
+}
+
+.SlideInFadeDelay2 {
+    animation: SlideInFade 0.5s ease-in-out forwards;
+    animation-delay: 0.05s;
+}
+
+.SlideInFadeDelay3 {
+    animation: SlideInFade 0.75s ease-in-out forwards;
+    animation-delay: 0.075s;
+}
+
+.SlideInFadeHor {
+    animation: SlideInFadeHor 0.5s ease-in-out forwards;
+}
+
+.FadeIn {
+    animation: fadeIn 0.25s ease-in-out forwards;
+}
+
+.FadeOut {
+    animation: fadeOut 0.25s ease-in-out forwards;
+}
+
+.opacityZero {
+    opacity: 0%;
+}
+
+.Appeared {
+    animation: appear 0.25s ease-in-out forwards;
+}
+
+.Disappeared {
+    animation: disappear 0.25s ease-in-out forwards;
+}
+
+.marginDecrease {
+    animation: marginDecrease 0.25s ease-in-out forwards;
+}
+
+.marginIncrease {
+    animation: marginIncrease 0.25s ease-in-out forwards;
+}
+
+.Rotate180 {
+    animation: rotate180 0.25s ease-in-out forwards;
+}

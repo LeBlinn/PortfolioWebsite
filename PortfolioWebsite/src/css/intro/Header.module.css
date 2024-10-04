@@ -1,0 +1,94 @@
+@media (max-width:950px) { /*Mobile*/
+    .HeaderMainDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 4vh;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .opacity {
+        opacity: 0%; /*animation brings it to 100%*/
+    }
+
+    .name {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        flex: 1;
+        margin-bottom: 2vh;
+        margin-right: 10vw; /*preference reasons*/
+
+        font-size: 3em;
+        font-weight: 900;
+    }
+
+    .subname {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        font-size: 1em;
+        font-weight: 200;
+    }
+
+    .spacer {
+        flex: 1;
+        margin-top: 5vh;
+    }
+
+    .description {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        flex: 1;
+        text-align: left;
+
+        font-size: 1em;
+        font-weight: 350;
+        opacity: 0%; /*animation brings it to 100%*/
+    }
+}
+
+@media (min-width:951px) { /*Desktop*/
+    .HeaderMainDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 10vh;
+        margin-bottom: auto;
+        margin-left: 6vw;
+        margin-right: auto;
+
+        text-align: left;
+    }
+
+    .name {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        flex: 1;
+
+        font-size: 4em;
+        font-weight: 900;
+    }
+
+    .subname {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .spacer {
+        flex: 1;
+        margin-top: 5vh;
+    }
+
+    .description {
+        padding-right: 5%; /*prevents annoying text overflow*/
+        flex: 1;
+        text-align: left;
+        font-size: 1.1em;
+        font-weight: 350;
+        opacity: 0%; /*animation brings it to 100%*/
+    }
+}
