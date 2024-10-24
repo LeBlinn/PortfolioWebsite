@@ -74,7 +74,7 @@ function Expertise() {
                 <div className={styles.box3} ref={box3ref}>
                     <div className={styles.boxesTop}>
                         <img src={monitor}></img>
-                        <h2 className='mainText'>Software Developper</h2>
+                        <h2 className='mainText'>Software Developer</h2>
                     </div>
                     <p className='text'>Knowledgeable about high level languages such as Java, C#, python,
                         <br/>and<br/>
