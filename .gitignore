@@ -1,3 +1,4 @@
 #ignore my build folder and deploy.sh
 PortfolioWebsite/deploy.sh
 PortfolioWebsite/dist
+PortfolioWebsite/node_modules
