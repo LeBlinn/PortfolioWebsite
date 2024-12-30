@@ -14,14 +14,6 @@ function Header(){
                 <div className={`${styles.description} text SlideInFadeDelay3`}>
                     A student trying to improve himself<br />
                     by doing all sorts of personal projects.
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    Temporary Note for possible onlookers ~ Website is still getting worked on.
                 </div>
         </div>
     )
