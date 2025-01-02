@@ -2,3 +2,4 @@
 PortfolioWebsite/deploy.sh
 PortfolioWebsite/dist/
 PortfolioWebsite/node_modules/
+PortfolioWebsite/package-lock.json
