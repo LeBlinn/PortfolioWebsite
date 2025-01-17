@@ -1,12 +1,11 @@
-import styles from '../../css/footer/Footer.module.css';
 import Contact from './Contact';
 
 function footer(){
     return (
-        <div className={styles.footerMainDiv}>
+        <div className='flex flex-col justify-between min-h-screen'>
             <Contact />
-            <div className={`${styles.footnote} text`}>
-                developed by Josh Blinn © 2024. All Rights Reserved.
+            <div className='font-notosansjp font-light text-color-secondary text-md tablet:lg text-center'>
+                Developed by Josh Blinn © 2024. All Rights Reserved.
             </div>
         </div>
     )

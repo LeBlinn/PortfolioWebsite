@@ -106,15 +106,15 @@
 }
 
 .SlideInFadeHor {
-    animation: SlideInFadeHor 0.5s ease-in-out forwards;
+    animation: SlideInFadeHor 0.25s ease-in-out forwards;
 }
 
 .FadeIn {
-    animation: fadeIn 0.25s ease-in-out forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 .FadeOut {
-    animation: fadeOut 0.25s ease-in-out forwards;
+    animation: fadeOut 0s ease-in-out forwards;
 }
 
 .opacityZero {

@@ -1,88 +1,93 @@
-import React, { useEffect, useRef } from 'react';
-
-import styles from '../../css/expertise/Expertise.module.css';
 import '../../css/Animations.css';
 
-import processor from '../../assets/processor.svg';
 import microcontroller from '../../assets/microcontroller.svg';
-import monitor from '../../assets/monitor.svg';
 
 function Expertise() {
-    const box1ref = useRef(null);
-    const box2ref = useRef(null);
-    const box3ref = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && window.matchMedia('(min-width: 951px)').matches) {
-                    let classNameToAdd = 'SlideInFade';
-                    if (entry.target === box2ref.current) {
-                        classNameToAdd = 'SlideInFadeDelay1';
-                    } else if (entry.target === box3ref.current) {
-                        classNameToAdd = 'SlideInFadeDelay2';
-                    }
-                    entry.target.classList.add(classNameToAdd);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.2 });
-
-        if (box1ref.current) {
-            observer.observe(box1ref.current);
-        }
-        if (box2ref.current) {
-            observer.observe(box2ref.current);
-        }
-        if (box3ref.current) {
-            observer.observe(box3ref.current);
-        }
-
-        return () => {
-            if (box1ref.current) {
-                observer.unobserve(box1ref.current);
-            }
-            if (box2ref.current) {
-                observer.unobserve(box2ref.current);
-            }
-            if (box3ref.current) {
-                observer.unobserve(box3ref.current);
-            }
-        };
-    }, []);
-
     return (
-        <div className={styles.mainDiv}>
-            <div className={`${styles.title} mainText`}>
-                My Expertise
+        <div>
+            <h1 className='font-notosansjp font-bold text-color-primary text-2xl tablet:text-3xl text-center p-2 overflow-hidden' >
+              My Expertise
+            </h1>
+            <div className='p-4' />
+            <div class='tablet:grid tablet:grid-cols-2 desktop:grid-cols-3'>
+              <div className='p-4'>
+                <div className="border-2 border-secondary rounded-lg shadow-[6px_6px] mr-2 ml-2">
+                  <div className="card-body items-center text-center">
+                    <h2 className="card-title">
+                      <svg className='m-1 w-10 h-auto fill-current' width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.25C9.41421 1.25 9.75 1.58579 9.75 2V3.26272C10.216 3.25376 10.7154 3.25111 11.25 3.25032V2C11.25 1.58579 11.5858 1.25 12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V3.25032C13.2846 3.25111 13.784 3.25376 14.25 3.26272V2C14.25 1.58579 14.5858 1.25 15 1.25C15.4142 1.25 15.75 1.58579 15.75 2V3.32709C16.0099 3.34691 16.2561 3.37182 16.489 3.40313C17.6614 3.56076 18.6104 3.89288 19.3588 4.64124C20.1071 5.38961 20.4392 6.33855 20.5969 7.51098C20.6282 7.7439 20.6531 7.99006 20.6729 8.25H22C22.4142 8.25 22.75 8.58579 22.75 9C22.75 9.41421 22.4142 9.75 22 9.75H20.7373C20.7462 10.216 20.7489 10.7154 20.7497 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20.7497C20.7489 13.2846 20.7462 13.784 20.7373 14.25H22C22.4142 14.25 22.75 14.5858 22.75 15C22.75 15.4142 22.4142 15.75 22 15.75H20.6729C20.6531 16.0099 20.6282 16.2561 20.5969 16.489C20.4392 17.6614 20.1071 18.6104 19.3588 19.3588C18.6104 20.1071 17.6614 20.4392 16.489 20.5969C16.2561 20.6282 16.0099 20.6531 15.75 20.6729V22C15.75 22.4142 15.4142 22.75 15 22.75C14.5858 22.75 14.25 22.4142 14.25 22V20.7373C13.784 20.7462 13.2846 20.7489 12.75 20.7497V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20.7497C10.7154 20.7489 10.216 20.7462 9.75 20.7373V22C9.75 22.4142 9.41421 22.75 9 22.75C8.58579 22.75 8.25 22.4142 8.25 22V20.6729C7.99006 20.6531 7.7439 20.6282 7.51098 20.5969C6.33855 20.4392 5.38961 20.1071 4.64124 19.3588C3.89288 18.6104 3.56076 17.6614 3.40313 16.489C3.37182 16.2561 3.34691 16.0099 3.32709 15.75H2C1.58579 15.75 1.25 15.4142 1.25 15C1.25 14.5858 1.58579 14.25 2 14.25H3.26272C3.25376 13.784 3.25111 13.2846 3.25032 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H3.25032C3.25111 10.7154 3.25376 10.216 3.26272 9.75H2C1.58579 9.75 1.25 9.41421 1.25 9C1.25 8.58579 1.58579 8.25 2 8.25H3.32709C3.34691 7.99006 3.37182 7.7439 3.40313 7.51098C3.56076 6.33855 3.89288 5.38961 4.64124 4.64124C5.38961 3.89288 6.33855 3.56076 7.51098 3.40313C7.7439 3.37182 7.99006 3.34691 8.25 3.32709V2C8.25 1.58579 8.58579 1.25 9 1.25ZM7.71085 4.88976C6.70476 5.02502 6.12511 5.27869 5.7019 5.7019C5.27869 6.12511 5.02502 6.70476 4.88976 7.71085C4.75159 8.73851 4.75 10.0932 4.75 12C4.75 13.9068 4.75159 15.2615 4.88976 16.2892C5.02502 17.2952 5.27869 17.8749 5.7019 18.2981C6.12511 18.7213 6.70476 18.975 7.71085 19.1102C8.73851 19.2484 10.0932 19.25 12 19.25C13.9068 19.25 15.2615 19.2484 16.2892 19.1102C17.2952 18.975 17.8749 18.7213 18.2981 18.2981C18.7213 17.8749 18.975 17.2952 19.1102 16.2892C19.2484 15.2615 19.25 13.9068 19.25 12C19.25 10.0932 19.2484 8.73851 19.1102 7.71085C18.975 6.70476 18.7213 6.12511 18.2981 5.7019C17.8749 5.27869 17.2952 5.02502 16.2892 4.88976C15.2615 4.75159 13.9068 4.75 12 4.75C10.0932 4.75 8.73851 4.75159 7.71085 4.88976ZM9.95063 6.25H14.0494C14.7142 6.24996 15.2871 6.24993 15.7458 6.31161C16.2375 6.3777 16.7087 6.52676 17.091 6.90901C17.4732 7.29126 17.6223 7.76252 17.6884 8.25416C17.7501 8.7129 17.75 9.28577 17.75 9.95063V14.0494C17.75 14.7142 17.7501 15.2871 17.6884 15.7458C17.6223 16.2375 17.4732 16.7087 17.091 17.091C16.7087 17.4732 16.2375 17.6223 15.7458 17.6884C15.2871 17.7501 14.7142 17.75 14.0494 17.75H9.95063C9.28577 17.75 8.7129 17.7501 8.25416 17.6884C7.76252 17.6223 7.29126 17.4732 6.90901 17.091C6.52676 16.7087 6.3777 16.2375 6.31161 15.7458C6.24993 15.2871 6.24996 14.7142 6.25 14.0494V9.95063C6.24996 9.28577 6.24993 8.7129 6.31161 8.25416C6.3777 7.76252 6.52676 7.29126 6.90901 6.90901C7.29126 6.52676 7.76252 6.3777 8.25416 6.31161C8.7129 6.24993 9.28577 6.24996 9.95063 6.25ZM8.45403 7.79823C8.12872 7.84197 8.02676 7.91258 7.96967 7.96967C7.91258 8.02676 7.84197 8.12872 7.79823 8.45403C7.75159 8.80091 7.75 9.27169 7.75 10V14C7.75 14.7283 7.75159 15.1991 7.79823 15.546C7.84197 15.8713 7.91258 15.9732 7.96967 16.0303C8.02676 16.0874 8.12872 16.158 8.45403 16.2018C8.80091 16.2484 9.27169 16.25 10 16.25H14C14.7283 16.25 15.1991 16.2484 15.546 16.2018C15.8713 16.158 15.9732 16.0874 16.0303 16.0303C16.0874 15.9732 16.158 15.8713 16.2018 15.546C16.2484 15.1991 16.25 14.7283 16.25 14V10C16.25 9.27169 16.2484 8.80091 16.2018 8.45403C16.158 8.12872 16.0874 8.02676 16.0303 7.96967C15.9732 7.91258 15.8713 7.84197 15.546 7.79823C15.1991 7.75159 14.7283 7.75 14 7.75H10C9.27169 7.75 8.80091 7.75159 8.45403 7.79823Z"/>
+                      </svg>
+                      FPGA Development</h2>
+                    {/* <div className='p-4'/>
+                    <p>Xilinx, Vivado, Multisim, VHDL</p> */}
+                  </div>
+                </div>
+              </div>
+
+              <div className='p-4'>
+                <div className="border-2 border-secondary rounded-lg shadow-[6px_6px] mr-2 ml-2">
+                  <div className="card-body items-center text-center">
+                    <h2 className="card-title">
+                    <svg className='m-1 w-10 h-auto fill-current' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 496 496" xml:space="preserve">
+                      <g>
+                        <g>
+                          <g>
+                            <path d="M92.688,0L48,44.688V80H0v112h48v128H0v64h48v112h448V0H92.688z M16,176V96h96v80H16z M16,368v-32h96v32H16z M480,480H64
+                              v-96h64v-24h16v-16h-16v-24H64V192h64v-16h16v-16h-16v-48h16V96h-16V80H64V51.312L99.312,16H480V480z"/>
+                            <path d="M304,448h112v-16h16v-16h-16v-16h16v-16h-16v-16h16v-16h-16v-16h16v-16h-16v-16h16v-16h-16v-16h16v-16h-16v-16h16v-16
+                              h-16v-16h16v-16h-16v-16h16v-16h-16v-16h16v-16h-16v-16h16V96h-16V80h16V64h-16V48H304v16h-16v16h16v16h-16v16h16v16h-16v16h16
+                              v16h-16v16h16v16h-16v16h16v16h-16v16h16v16h-16v16h16v16h-16v16h16v16h-16v16h16v16h-16v16h16v16h-16v16h16v16h-16v16h16V448z
+                              M320,64h80v368h-80V64z"/>
+                            <circle cx="360" cy="88" r="8" />
+                            <path d="M256,64h-64v48h64V64z M240,96h-32V80h32V96z"/>
+                            <path d="M256,144h-64v48h64V144z M240,176h-32v-16h32V176z"/>
+                            <path d="M144,216v16h-16v-16h-16v16H96v48h16v16h16v-16h16v16h16v-16h16v16h16v-16h16v-48h-16v-16h-16v16h-16v-16H144z M192,248
+                              v16h-80v-16H192z"/>
+                            <path d="M112,400c-17.648,0-32,14.352-32,32s14.352,32,32,32s32-14.352,32-32S129.648,400,112,400z M112,448
+                              c-8.824,0-16-7.176-16-16c0-8.824,7.176-16,16-16c8.816,0,16,7.176,16,16C128,440.824,120.816,448,112,448z"/>
+                            <path d="M192,400c-17.648,0-32,14.352-32,32s14.352,32,32,32s32-14.352,32-32S209.648,400,192,400z M192,448
+                              c-8.824,0-16-7.176-16-16c0-8.824,7.176-16,16-16c8.816,0,16,7.176,16,16C208,440.824,200.816,448,192,448z"/>
+                            <rect x="176" y="336" width="16" height="32"/>
+                            <rect x="208" y="336" width="16" height="32"/>
+                            <rect x="240" y="336" width="16" height="32"/>
+                            <circle cx="96" cy="48" r="8"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                      Embedded Systems</h2>
+                    {/* <div className='p-4'/>
+                    <p>Stm32, Arduino, Raspberry Pi</p> */}
+                  </div>
+                </div>
+              </div>
+
+              <div className='p-4'>
+                <div className="border-2 border-secondary rounded-lg shadow-[6px_6px] mr-2 ml-2">
+                  <div className="card-body items-center text-center">
+                    <h2 className="card-title">
+                      <svg className='m-1 w-10 h-auto fill-current' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 23.879 23.879" xml:space="preserve">
+                        <g>
+                        <g>
+                        <rect x="8.52" y="19.698" width="6.84" height="1.215"/>
+                        <polygon  points="5.019,21.359 4.669,22.733 19.211,22.733 18.861,21.359 		"/>
+                        <path  d="M22.827,1.145H1.052C0.471,1.145,0,1.616,0,2.198v15.656c0,0.581,0.471,1.053,1.052,1.053h21.774
+                        c0.582,0,1.053-0.472,1.053-1.053V2.198C23.879,1.616,23.409,1.145,22.827,1.145z M21.775,16.801H2.106V3.25h19.669
+                        C21.775,3.25,21.775,16.801,21.775,16.801z"/>
+                        </g>
+                        </g>
+                      </svg>
+                      Software Development
+                    </h2>
+                    {/* <div className='p-4'/>
+                    <p>Python, Java, C++, Rust</p> */}
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className={styles.boxes}>
-                <div className={styles.box1} ref={box1ref}>
-                    <div className={styles.boxesTop}>
-                        <img src={processor}></img>
-                        <h2 className='mainText'>FPGA Development</h2>
-                    </div>
-                    <p className='text'>Experienced in FPGA Design. Xilinx, Vivado, Multisim, VHDL, System Verilog</p>
-                </div>
-                <div className={styles.box2} ref={box2ref}>
-                    <div className={styles.boxesTop}>
-                        <img src={microcontroller}></img>
-                        <h2 className='mainText'>Embedded Systems</h2>
-                    </div>
-                    <p className='text'>Skilled in embedded development. Using microcontrollers, such as<br/>STM32, Arduino</p>
-                </div>
-                <div className={styles.box3} ref={box3ref}>
-                    <div className={styles.boxesTop}>
-                        <img src={monitor}></img>
-                        <h2 className='mainText'>Software Developer</h2>
-                    </div>
-                    <p className='text'>Knowledgeable about high level languages such as Java, C#, python,
-                        <br/>and<br/>
-                        Low level languages such as C, C+
-                    </p>
-                </div>
-            </div>
-        </div>
+          </div>    
     )
 }
 

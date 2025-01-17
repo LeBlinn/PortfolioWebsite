@@ -1,4 +1,4 @@
-import styles from '../../css/intro/Portfolio.module.css';
+// currently redacted from website
 
 import React, { useRef, useEffect } from 'react';
 
@@ -26,7 +26,7 @@ function Portfolio(){
     }, []);
     
     return (
-        <div className={`${styles.portfolioMainDiv} mainText`}>
+        <div className=''>
             <div className={styles.scrollContainer} ref={portfolioRef}>
                 <div className={styles.Margin}></div>
                 <h1 className={styles.Portfolio}>Portfolio</h1> 
