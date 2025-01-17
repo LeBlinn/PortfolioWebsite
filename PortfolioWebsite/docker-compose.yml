@@ -1,11 +1,14 @@
 services:
   portfolioweb:
+    container_name: portfolioweb
     build:
       context: .
       dockerfile: Dockerfile
-    #ports:
-      #- "5173:80"  # Map port 80 in the container to port 8080 on your machine
+    ports:
+      - "5173:80"  # Map port 80 in the container to port 8080 on your machine
     restart: always  # Automatically restart if the container crashes
+    networks:
+      - nginx_proxy
 
 networks:
   nginx_proxy:
