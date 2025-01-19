@@ -1,4 +1,4 @@
-import projectImage from '../../../assets/projectImage.png';
+import projectImage from '../../../assets/perWebsiteScreenshot.png';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ function PortfolioWebsite(){
     return (
         <div className='p-4'>
             <div className="border-2 border-secondary rounded-lg bg-base-100 hover:shadow-lg transition-shadow duration-300 mr-2 ml-2 overflow-hidden max-w-full max-h-full">
-                <figure>
+                <figure className='border-b-2 border-secondary border-opacity-5'>
                     <img
                     src={projectImage}
                     alt="Website" />

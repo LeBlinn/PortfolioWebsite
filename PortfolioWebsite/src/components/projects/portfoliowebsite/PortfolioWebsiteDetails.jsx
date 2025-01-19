@@ -1,5 +1,6 @@
 import '../../../css/Animations.css'
-import projectImage from '../../../assets/projectImage.png';
+import projectImage from '../../../assets/perWebsiteScreenshot.png';
+import projectPic from '../../../assets/perWebsiteProjects.png';
 // import leftArrow from '../../../assets/leftArrow.svg';
 import Footnote from '../../footer/Footnote';
 
@@ -48,26 +49,23 @@ function PortfolioWebsiteDetails(){
                             </a>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src={projectImage} alt='projectImage' />
-                        <div className='p-2' />
+                <div className='p-2'/>
+                <div className='flex flex-col overflow-hidden'>
+                    <div className='font-notosansjp font-light text-color-secondary text-xl tablet:text-2xl text-left ml-4'>
+                        Pictures
                     </div>
-                    <div>
-                        <img src={projectImage} alt='projectImage' />
-                        <div className='p-2' />
-                    </div>
-                    <div>
-                        <img src={projectImage} alt='projectImage' />
-                        <div className='p-2' />
-                    </div>
-                    <div>
-                        <img src={projectImage} alt='projectImage' />
-                        <div className='p-2' />
+                    <div className='grid grid-cols-1 tablet:grid-cols-1 desktop:grid-cols-1 gap-4 m-auto'>
+                        <div className="border-2 border-secondary rounded-lg bg-base-100 mr-2 ml-2 overflow-hidden max-w-fit max-h-auto">
+                            <img src={projectImage} alt='projectImage' />
+                        </div>
+                        <div className="border-2 border-secondary rounded-lg bg-base-100 mr-2 ml-2 overflow-hidden max-w-fit max-h-auto">
+                            <img src={projectPic} alt='projectImage' />
+                        </div>
                     </div>
                 </div>
             </div>
-            <Footnote />
+            <div className='p-4'/>
+            <Footnote className='sticky bottom-0'/>
         </div>
     )
 }
